@@ -4,7 +4,6 @@ const incrBtnRef = document.querySelector('button[data-action="increment"]');
 // console.log(incrBtnRef);
 const valueRef = document.querySelector('#value');
 // console.log(valueRef);
-const counter = document.querySelector('#counter');
 let counterValue = 0;
 
 const incrementFn = () => {

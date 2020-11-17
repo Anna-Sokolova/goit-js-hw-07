@@ -1,8 +1,8 @@
-const userInput = document.querySelector('input[type="text"]');
-const placeOutput = document.querySelector('#name-output');
+const userInputRef = document.querySelector('input[type="text"]');
+const placeOutputRef = document.querySelector('#name-output');
 
-userInput.addEventListener('input', event => {
-  userInput.value === ''
-    ? (placeOutput.textContent = 'Незнакомец')
-    : (placeOutput.textContent = event.target.value);
+userInputRef.addEventListener('input', event => {
+  userInputRef.value.trim() === ''
+    ? (placeOutputRef.textContent = 'Незнакомец')
+    : (placeOutputRef.textContent = event.target.value.trim());
 });
