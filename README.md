@@ -4,7 +4,7 @@ DOM
 
 // Задание 1 В HTML есть список категорий ul#categories.
 
-<ul id="categories">
+<!-- <ul id="categories">
   <li class="item">
     <h2>Животные</h2>
 
@@ -38,7 +38,8 @@ DOM
     </ul>
 
   </li>
-</ul>
+</ul> -->
+
 Напиши скрипт, который выполнит следующие операции.
 
 Посчитает и выведет в консоль количество категорий в ul#categories, то есть
@@ -54,30 +55,50 @@ DOM
 
 // Задание 2 В HTML есть пустой список ul#ingredients.
 
-<ul id="ingredients"></ul>
+<!-- <ul id="ingredients"></ul> -->
+
 В JS есть массив строк.
 
-const ingredients = [ 'Картошка', 'Грибы', 'Чеснок', 'Помидоры', 'Зелень',
-'Приправы', ]; Напиши скрипт, который для каждого элемента массива ingredients
-создаст отдельный li, после чего вставит все li за одну операцию в список
+<!-- const ingredients = [
+  'Картошка',
+  'Грибы',
+  'Чеснок',
+  'Помидоры',
+  'Зелень',
+  'Приправы',
+  ];  -->
+
+Напиши скрипт, который для каждого элемента массива ingredients создаст
+отдельный li, после чего вставит все li за одну операцию в список
 ul.ingredients. Для создания DOM-узлов используй document.createElement().
 
 // Задание 3 Напиши скрипт для создания галлереи изображений по массиву данных.
 
 В HTML есть список ul#gallery.
 
-<ul id="gallery"></ul>
-Используй массив объектов images для создания тегов img вложенных в li. Для создания разметки используй шаблонные строки и insertAdjacentHTML().
+<!-- <ul id="gallery"></ul> -->
+
+Используй массив объектов images для создания тегов img вложенных в li.
+
+Для создания разметки используй шаблонные строки и insertAdjacentHTML().
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки. Добавь
-минимальное оформление галереи флексбоксами или гридами через css-классы. const
-images = [ { url:
+минимальное оформление галереи флексбоксами или гридами через css-классы.
+
+<!-- const images = [
+  { url:
 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-alt: 'White and Black Long Fur Cat', }, { url:
+alt: 'White and Black Long Fur Cat'
+},
+{ url:
 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-alt: 'Orange and White Koi Fish Near Yellow Koi Fish', }, { url:
+alt: 'Orange and White Koi Fish Near Yellow Koi Fish'
+},
+{ url:
 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-alt: 'Group of Horses Running', }, ];
+alt: 'Group of Horses Running'
+},
+]; -->
 
 // Задание 4 Счетчик состоит из спана и кнопок, которые должны увеличивать и
 уменьшать значение счетчика на 1.
@@ -87,11 +108,11 @@ alt: 'Group of Horses Running', }, ];
 значения счетчика Добавь слушатели кликов на кнопки, вызовы функций и обновление
 интерфейса
 
-<div id="counter">
+<!-- <div id="counter">
   <button type="button" data-action="decrement">-1</button>
   <span id="value">0</span>
   <button type="button" data-action="increment">+1</button>
-</div>
+</div> -->
 
 // Задание 5
 
@@ -99,29 +120,31 @@ alt: 'Group of Horses Running', }, ];
 input), подставляет его текущее значение в span#name-output. Если инпут пустой,
 в спане должна отображаться строка 'незнакомец'.
 
-<input type="text" placeholder="Ваше имя?" id="name-input" />
-<h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+<!-- <input type="text" placeholder="Ваше имя?" id="name-input" />
+<h1>Привет, <span id="name-output">незнакомец</span>!</h1> -->
 
 //
 
 Задание 6 Напиши скрипт, который бы при потере фокуса на инпуте, проверял его
 содержимое на правильное количество символов.
 
-<input
+<!-- <input
   type="text"
   id="validation-input"
   data-length="6"
   placeholder="Введи 6 символов"
-/> Сколько символов должно быть в инпуте, указывается в его атрибуте
-data-length. Если введено подходящее количество, то border инпута становится
-зеленым, если неправильное - красным. Для добавления стилей, используй
-CSS-классы valid и invalid.
+/>  -->
 
-#validation-input { border: 3px solid #bdbdbd; }
+Сколько символов должно быть в инпуте, указывается в его атрибуте data-length.
+Если введено подходящее количество, то border инпута становится зеленым, если
+неправильное - красным. Для добавления стилей, используй CSS-классы valid и
+invalid.
+
+<!-- #validation-input { border: 3px solid #bdbdbd; }
 
 #validation-input.valid { border-color: #4caf50; }
 
-#validation-input.invalid { border-color: #f44336; }
+#validation-input.invalid { border-color: #f44336; } -->
 
 // Задание 7
 
@@ -129,9 +152,9 @@ CSS-классы valid и invalid.
 (событие input) и изменяет инлайн-стиль span#text обновляя свойство font-size. В
 результате при перетаскивании ползунка будет меняться размер текста.
 
-<input id="font-size-control" type="range" />
+<!-- <input id="font-size-control" type="range" />
 <br />
-<span id="text">Абракадабра!</span>
+<span id="text">Абракадабра!</span> -->
 
 // Задание 8 - дополнительное, выполнять не обязательно
 
