@@ -6,6 +6,7 @@ userInputRef.addEventListener('blur', () => {
     userInputRef.classList.add('valid');
     userInputRef.classList.remove('invalid');
   } else {
-    userInputRef.classList.toggle('invalid');
+    userInputRef.classList.add('invalid');
+    userInputRef.classList.remove('valid');
   }
 });
